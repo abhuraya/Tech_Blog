@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-auto">
         <h2>Hello, {{name}}</h2>
+        <h3 id="h3"></h3>
     </div>
 </div>
 
@@ -9,12 +10,12 @@
         <h3>New Blog:</h3>
         <form class="form new-blog-form">
             <div class="form-group">
-                <label for="blog-name">Blog:</label>
-                <input class="form-input" type="text" name="blog-name" id="blog-name">
+                <label for="blog-name">Blog Name:</label>
+                <input class="form-input" type="text" id="blog-name" name="blog-name">
             </div>
             <div class="form-group">
                 <label for="blog-desc">description:</label>
-                <textarea class="form-input" name="blog-desc" id="blog-desc"></textarea>
+                <textarea class="form-input" id="blog-desc" name="blog-desc"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Create</button>
@@ -23,16 +24,16 @@
     </div>
 
     {{#if blogs.length}}
-<div class="col-md-6 blog-list">
+   <div class="col-md-6 blog-list">
     <h3>Blogs</h3>
 
-    {{#each blogs as|blog|}}
+    {{#each blogs as |blog|}}
     <div class="row mb-2">
         <div class="col-md-8">
             <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
         </div>
         <div class="col-md-4">
-            <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">delete</button>
+            <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
         </div>
     </div>
     {{/each}}

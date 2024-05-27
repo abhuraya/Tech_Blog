@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Sal",
+        "email": "sal@hotmail.com",
+        "password": "salhotmail"
+    },
+    {
+        "name": "Melanie",
+        "email": "mel@yahoo.com",
+        "password": "melyahoo"
+    },
+    {
+        "name": "Alex",
+        "email": "alex@outlook.com",
+        "password": "alexoutlook"
+    },
+    {
+        "name": "Abhu",
+        "email": "abhu@gmail.com",
+        "password": "abhuraya"
+    },
+    {
+        "name": "Anu",
+        "email": "anu@gmail.com",
+        "password": "anuraya1"
+    },
+    {
+        "name": "Krishna",
+        "email": "krishna@gmail.com",
+        "password": "krishna1"
+    }
+]

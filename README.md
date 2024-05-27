@@ -130,3 +130,10 @@ You are required to submit BOTH of the following for review:
 
 ---
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+<p>
+    <h2>{{ comment_name }}</h2>
+    <p>{{ comment_description }}</p>
+    <p>Created by {{user.name}} on {{format_date comment.date_created}}</p>
+    </p>
