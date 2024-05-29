@@ -42,12 +42,12 @@ app.use(require('./controllers/index'));
 
 //app.use(routes);
 
-sequelize.sync({ force: true }).then(() => {
+/*sequelize.sync({ force: true }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
-});
-
-
-
-/*app.listen(PORT, () => {
-    console.log('Server listening on: http://localhost:' + PORT);
 });*/
+
+
+
+app.listen(PORT, () => {
+    console.log('Server listening on: http://localhost:' + PORT);
+});
