@@ -11,11 +11,7 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        comment_name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        comment_description: {
+        comment: {
             type: DataTypes.STRING,
         },
         comment_date_created: {
@@ -28,13 +24,6 @@ Comment.init(
             references: {
                 model: 'blog',
                 key:'id',
-            },
-        },
-        user_name: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'user',
-                key: 'name',
             },
         },
     },

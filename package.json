@@ -18,6 +18,7 @@
     "express-session": "^1.18.0",
     "install": "^0.13.0",
     "mysql2": "^3.9.7",
+    "nes.css": "^2.3.0",
     "sequelize": "^6.37.3"
   }
 }

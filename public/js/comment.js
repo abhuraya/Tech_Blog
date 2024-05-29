@@ -5,9 +5,9 @@ const newFormHandler = async (event) => {
     const description = document.querySelector('#comment-desc').value.trim();
 
     if (name && description) {
-        const response = await fetch (`/api/blog/:id`, {
+        const response = await fetch (`/api/blogs/:id`, {
             method: 'POST',
-            body: JSON.stringify({ comment_name, comment_description}),
+            body: JSON.stringify({ comment}),
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -25,7 +25,7 @@ const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
         const id = event.target.getAttribute('data-id');
 
-        const response = await fetch(`/api/blog/${id}`, {
+        const response = await fetch(`/api/blogs/${id}`, {
             method: 'DELETE',
         });
 
